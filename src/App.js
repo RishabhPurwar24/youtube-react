@@ -1,25 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Head from "./components/Head";
+import Body from "./components/Body";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Head />
+      <Body />
     </div>
   );
 }
 
 export default App;
+
+/**
+ * Header
+ * Body
+ *   Sidebar
+ *      Menu Items
+ *   Main Container
+ *     ButtonsList
+ *     VideoContainer
+ *       VideoCard
+ */
+
+/**
+ * Now more details:
+ * In header:
+ *    Left section (Hamburgermenu icon + YT icon)
+ *    Middle section(Search + Voice Search)
+ *    Right section (Video Icon+ Notification Bell Icon + User Info)
+ *
+ *
+ */
